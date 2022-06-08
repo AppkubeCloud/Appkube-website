@@ -181,7 +181,8 @@ class Navbar extends React.Component {
 	};
 
 	render() {
-		const { data } = this.props;
+		const { data } = thi
+		s.props;
 		const { edges: posts } = data.allMarkdownRemark;
 		const { mainMenuActiveIndex, active, mobileSubMenuIndex, mobileMenuActiveStatus } = this.state;
 		return (
@@ -213,7 +214,7 @@ class Navbar extends React.Component {
 								</button>
 							</div>
 						</li>
-						<li className={`nav-item dropdown ${mainMenuActiveIndex === 2 ? 'active' : ''}`} onMouseOver={() => this.setMainMenuActive(1)} onMouseOut={() => this.setMainMenuActive(-1)}>
+						<li className={`nav-item dropdown ${mainMenuActiveIndex === 2 ? 'active' : ''}`} onMouseOver={() => this.setMainMenuActive(2)} onMouseOut={() => this.setMainMenuActive(-1)}>
 							<a href="#">Resources &amp; Consulting <i className="fas fa-chevron-down"></i></a>
 							<div className={`main-sub-menu`}>
 								<ul className="default-active">
@@ -224,7 +225,7 @@ class Navbar extends React.Component {
 								</button>
 							</div>
 						</li>
-						<li className={`nav-item dropdown ${mainMenuActiveIndex === 3 ? 'active' : ''}`} onMouseOver={() => this.setMainMenuActive(1)} onMouseOut={() => this.setMainMenuActive(-1)}>
+						<li className={`nav-item dropdown ${mainMenuActiveIndex === 3 ? 'active' : ''}`} onMouseOver={() => this.setMainMenuActive(3)} onMouseOut={() => this.setMainMenuActive(-1)}>
 							<a href="#">Resources &amp; Tool <i className="fas fa-chevron-down"></i></a>
 							<div className={`main-sub-menu`}>
 								<ul className="default-active">
