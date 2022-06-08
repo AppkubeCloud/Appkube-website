@@ -18,5 +18,5 @@ gettingstarted:
   testimonial: Resources Consulting Testimonial
 category:
   - resources
-  - Workflow Templates
+  - WorkflowTemplates
 ---
