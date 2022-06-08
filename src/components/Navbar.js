@@ -181,8 +181,7 @@ class Navbar extends React.Component {
 	};
 
 	render() {
-		const { data } = thi
-		s.props;
+		const { data } = this.props;
 		const { edges: posts } = data.allMarkdownRemark;
 		const { mainMenuActiveIndex, active, mobileSubMenuIndex, mobileMenuActiveStatus } = this.state;
 		return (
