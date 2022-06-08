@@ -213,28 +213,6 @@ class Navbar extends React.Component {
 								</button>
 							</div>
 						</li>
-						<li className={`nav-item dropdown ${mainMenuActiveIndex === 2 ? 'active' : ''}`} onMouseOver={() => this.setMainMenuActive(2)} onMouseOut={() => this.setMainMenuActive(-1)}>
-							<a href="#">Resources &amp; Consulting <i className="fas fa-chevron-down"></i></a>
-							<div className={`main-sub-menu`}>
-								<ul className="default-active">
-									{this.renderCategoriesDesktop("resources", posts)}
-								</ul>
-								<button className="btn btn-close" onClick={() => this.setMainMenuActive(-1)}>
-									<BsChevronUp className='sub-icon' />
-								</button>
-							</div>
-						</li>
-						<li className={`nav-item dropdown ${mainMenuActiveIndex === 3 ? 'active' : ''}`} onMouseOver={() => this.setMainMenuActive(3)} onMouseOut={() => this.setMainMenuActive(-1)}>
-							<a href="#">Resources &amp; Tool <i className="fas fa-chevron-down"></i></a>
-							<div className={`main-sub-menu`}>
-								<ul className="default-active">
-									{this.renderCategoriesDesktop("resource", posts)}
-								</ul>
-								<button className="btn btn-close" onClick={() => this.setMainMenuActive(-1)}>
-									<BsChevronUp className='sub-icon' />
-								</button>
-							</div>
-						</li>
 						<li className="nav-item">
 							<Link to="/workflowpost">Workflow</Link>
 						</li>
